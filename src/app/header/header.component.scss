@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+
+.header {
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  @include flex;
+}
+
+.header__container {
+  height: 100%;
+  width: calc(min(90rem, 100%));
+  margin: auto;
+}
+
+.nav-links {
+  height: 100%;
+  width: fit-content;
+  background-color: red;
+}
