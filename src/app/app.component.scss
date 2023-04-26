@@ -1,10 +1,13 @@
+@import '../styles/mixins';
+@import '../styles/variables';
+
 .app {
-  min-height: calc(100vh - 3rem);
-  margin-top: 3rem;
+  min-height: calc(100vh - $header-height);
+  margin-top: $header-height;
+  background: $color-bg;
   .app__container {
-    width: calc(min(90rem, 100%));
-    min-height: 100vh;
+    width: $app-width;
+    min-height: calc(100vh - $header-height);
     margin: auto;
-    padding: 4rem 1rem 0 1rem;
   }
 }

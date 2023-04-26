@@ -1,0 +1,18 @@
+<div class="book">
+  <div class="{`book__image-container`}">
+    <img
+      src="{{ book.volumeInfo?.imageLinks?.smallThumbnail }}"
+      alt="{{ book.volumeInfo.description }}"
+      class="book__image"
+    />
+  </div>
+  <div class="{`book__info-container`}">
+    <p class="book__category book__text__element">
+      {{ book.volumeInfo?.categories ? book.volumeInfo.categories[0] : '' }}
+    </p>
+    <p class="book__title book__text__element">{{ book.volumeInfo?.title ? book.volumeInfo.title : '' }}</p>
+    <p class="book__author book__text__element">
+      {{ book.volumeInfo?.authors ? book.volumeInfo.authors?.join(',') : '' }}
+    </p>
+  </div>
+</div>

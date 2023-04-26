@@ -1,7 +1,10 @@
 @import '../../styles/mixins';
+@import '../../styles/variables';
 
 .header {
-  height: 3rem;
+  background: $color-primary;
+  color: white;
+  height: $header-height;
   width: 100%;
   position: fixed;
   top: 0;
@@ -12,12 +15,22 @@
 
 .header__container {
   height: 100%;
-  width: calc(min(90rem, 100%));
+  width: $app-width;
   margin: auto;
+}
+
+.header__main {
+  @include widthAndHeight(100%, 100%);
+  @include flex(flex-start, center, row);
 }
 
 .nav-links {
   height: 100%;
   width: fit-content;
-  background-color: red;
+  @include flex(flex-start, center, row);
+  gap: 1rem;
+  .nav-link__container {
+    .nav-link {
+    }
+  }
 }

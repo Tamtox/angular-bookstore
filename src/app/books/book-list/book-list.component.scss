@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.book-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, min(20rem, 100%));
+  grid-auto-rows: 35rem;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  gap: 2rem;
+  margin: auto;
+}
